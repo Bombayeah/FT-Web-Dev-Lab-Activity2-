@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: aliceblue;
+   
+}
+body{
+    background-color:  #281128;
+    font-family: 'Sono', sans-serif;
+}
+
+
+.pricing-container{
+   
+    display: flex;
+    position: relative;
+    max-width: 75vw;
+    justify-content: space-around;
+    height: 500px;
+    margin: 25vh auto;
+  
+}
+.pricing-plan{
+   
+    position: relative;
+    width: 15vw;
+    border-radius: 20px;
+    padding: 1rem;
+    transition: 0.1s;
+}
+
+.plan-features{
+    list-style: none;
+}
+.plan-price{
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.plan-title{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+.plan-description{
+font-weight: 10;
+font-size: 0.8rem;
+text-align: justify;
+margin-bottom: 1rem;
+}
+.plan-features{
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: left;
+    position: relative;
+    left: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.plan-button{
+    position: relative;
+    color: #FFE1FF;
+    border-radius: 20px;
+    width: 13vw;
+    height: 5vh;
+    border: none;
+    background-color: rgba(255, 225, 255, 0.6);
+    top: 10%;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#basic-btn{
+    top: 13.5%;
+}
+#premium-btn{
+    top: 7%;
+}
+
+@media (max-width: 1250px) {
+    .pricing-container{
+  flex-direction: column;
+   height: 150vh;
+   align-items: center;
+}
+.pricing-plan{
+    
+    position: relative;
+    width: 75%;
+    height: 45vh;
+    border-radius: 20px;
+    padding: 1rem;
+    transition: 0.1s;
+  }
+  .plan-button{
+    position: relative;
+    color: #FFE1FF;
+    border-radius: 20px;
+    width: 50%;
+    height: 15%;
+    border: none;
+    background-color: rgba(255, 225, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    translate: 15vw -2rem;
+}
+
+#basic-btn{
+    translate: 15vw -2.5rem;
+}
+#premium-btn{
+    translate: 15vw -1.5rem;
+}
+  }
+/*
+  @media (max-width: 1440px){
+    .pricing-container{
+        
+         height: 60vh;
+         width: 80vw;
+      }
+      .pricing-plan{
+    
+        position: relative;
+        width: 30%;
+        height: 100%;
+        border-radius: 20px;
+        padding: 1rem;
+        transition: 0.1s;
+      }
+      .plan-button{
+        position: relative;
+        color: #FFE1FF;
+        border-radius: 20px;
+        width: 70%;
+        height: 10%;
+        border: none;
+        background-color: rgba(255, 225, 255, 0.6);
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        translate: 3vw -0rem;
+    }
+    
+    #basic-btn{
+        translate: 3vw -1rem;
+    }
+    #premium-btn{
+        translate: 3vw -.1rem;
+    }
+  }
+
+  @media (max-width: 1024px){
+    .pricing-container{
+        
+         height: 150vh;
+         width: 50vw;
+      }
+      .pricing-plan{
+    
+        position: relative;
+        width: 80%;
+        height: 30%;
+        border-radius: 20px;
+        padding: 1rem;
+        transition: 0.1s;
+      }
+      .plan-button{
+        position: relative;
+        color: #FFE1FF;
+        border-radius: 20px;
+        width: 70%;
+        height: 10%;
+        border: none;
+        background-color: rgba(255, 225, 255, 0.6);
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        translate: 6vw -2.5rem;
+    }
+    
+    #basic-btn{
+        translate: 6vw -2.5rem;
+    }
+    #premium-btn{
+        translate: 6vw -2rem;
+    }
+  }
+
+  @media (max-width: 425px){
+    
+    .pricing-container{
+        margin: 10vh auto;
+        height: 70vh;
+        width: 50vw;
+     }
+     .pricing-plan{
+   
+       position: relative;
+       width: 80%;
+       height: 30%;
+       border-radius: 20px;
+       padding: 1rem;
+       transition: 0.1s;
+     }
+     .plan-button{
+       position: relative;
+       color: #FFE1FF;
+       border-radius: 20px;
+       width: 70%;
+       height: 10%;
+       border: none;
+       background-color: rgba(255, 225, 255, 0.6);
+       font-size: 1rem;
+       font-weight: 500;
+       letter-spacing: 1.5px;
+       translate: 6vw -2rem;
+   }
+   
+   #basic-btn{
+       translate: 6vw -2rem;
+   }
+   #premium-btn{
+       translate: 6vw -1.5rem;
+   }
+  }
+
+  @media (max-width: 768px){
+    
+    .pricing-container{
+        margin: 10vh auto;
+        height: 120vh;
+        width: 50vw;
+     }
+     .pricing-plan{
+   
+       position: relative;
+       width: 80%;
+       height: 30%;
+       border-radius: 20px;
+       padding: 1rem;
+       transition: 0.1s;
+     }
+     .plan-button{
+       position: relative;
+       color: #FFE1FF;
+       border-radius: 20px;
+       width: 70%;
+       height: 9%;
+       border: none;
+       background-color: rgba(255, 225, 255, 0.6);
+       font-size: 1rem;
+       font-weight: 500;
+       letter-spacing: 1.5px;
+       translate: 6vw -2rem;
+   }
+   
+   #basic-btn{
+       translate: 6vw -2.75rem;
+   }
+   #premium-btn{
+       translate: 6vw -2rem;
+   }
+  }
+ 
+
